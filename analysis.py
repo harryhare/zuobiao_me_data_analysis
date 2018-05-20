@@ -17,7 +17,7 @@ def plot_num(x_index):
 	m={}
 	line_num=0
 	xtitle="x"
-	ytitle="y"
+	ytitle="填写问卷的人数，按出生时间的统计"
 	for line in reader:
 		if(line_num==0):
 			line_num+=1
@@ -50,9 +50,9 @@ def plot_num(x_index):
 		plt.show()
 
 def plot(x_index,y_index):
-	plt.figure(figsize=(7, 5))
+	plt.figure(figsize=(7, 5))#图片属性设置，图片大小
 	rect=[0.1,0.15,0.7,0.7]
-	subplt=plt.axes(rect)
+	subplt=plt.axes(rect)#此处设置柱状通在图片中的位置
 	file=open('2014data.csv','r',encoding='UTF-8')
 	#file=codecs.open('E:\\git\\my\\zuobiao_analysis\\2014data.csv','rb','utf-8')
 	reader=csv.reader(file)
